@@ -8,3 +8,4 @@ use Example\Greeting;
 $greeting = new Greeting();
 
 echo $greeting->sayHello();
+
