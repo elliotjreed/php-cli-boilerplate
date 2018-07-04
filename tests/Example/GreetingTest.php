@@ -8,7 +8,7 @@ use Example\Greeting;
 
 class GreetingTest extends TestCase
 {
-    public function testItPrintsHello()
+    public function testItPrintsHello(): void
     {
         $greeting = new Greeting();
 
@@ -18,3 +18,4 @@ class GreetingTest extends TestCase
         $this->assertEquals($expectedResult, $actualResult);
     }
 }
+
