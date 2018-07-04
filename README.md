@@ -40,12 +40,12 @@ The test for class `Greeting` is only verifying the return value of one method.
 
 ## Running the Application
 
-To run the application execute `bin/hello.php "World"` or `php hello.php "World"`.
-You should see the text &ldquo;Hello World&rdquo; being printed.
+To run the application execute `bin/hello.php` or `php bin/hello.php`.
+You should see the text "Hello" being printed.
 
 ```
-$: bin/hello.php "World"
-Hello World
+$: bin/hello.php
+Hello
 ```
 
 
