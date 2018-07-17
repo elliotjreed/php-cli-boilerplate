@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate?ref=badge_shield)
+
 # Vanilla PHP Command Line Project
 
 This repository shows a basic setup for a command line application in PHP.
