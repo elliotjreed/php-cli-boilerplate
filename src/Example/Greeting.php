@@ -7,7 +7,6 @@ class Greeting
 {
     public function sayHello(): string
     {
-        return 'Hello' . PHP_EOL;
+        return 'Hello';
     }
 }
-

@@ -12,10 +12,6 @@ class GreetingTest extends TestCase
     {
         $greeting = new Greeting();
 
-        $expectedResult = 'Hello' . PHP_EOL;
-        $actualResult = $greeting->sayHello();
-
-        $this->assertEquals($expectedResult, $actualResult);
+        $this->assertEquals('Hello', $greeting->sayHello());
     }
 }
-
