@@ -9,15 +9,17 @@ This repository shows a basic setup for a command line application in PHP.
 
 PHP 7 or above and Composer is expected to be installed on our system.
 
+
 ### Installing Composer
 
 For instructions on how to install Composer visit https://getcomposer.org/download/
+
 
 ### Installing
 
 After cloning this repository, change into the newly created directory and run
 
-```
+```bash
 composer install
 ```
 
@@ -28,7 +30,7 @@ This will install all dependencies needed for the project.
 
 All tests can be run by executing
 
-```
+```bash
 vendor/bin/phpunit
 ```
 
@@ -45,7 +47,7 @@ The test for class `Greeting` is only verifying the return value of one method.
 To run the application execute `bin/hello.php` or `php bin/hello.php`.
 You should see the text "Hello" being printed.
 
-```
+```bash
 $: bin/hello.php
 Hello
 ```

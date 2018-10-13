@@ -7,7 +7,7 @@ tags:
 
 PHP is a general-purpose server-side scripting language primarily used in web development. Originally created by Rasmus Lerdorf in 1994, it is now by The PHP Development Team.
 
-PHP originally stood for &ldquo;Personal Home Page&rdquo;, but now stands for &ldquo;PHP: Hypertext Preprocessor&rdquo;.
+PHP originally stood for "Personal Home Page", but now stands for "PHP: Hypertext Preprocessor".
 
 
 ## Further Material
@@ -22,7 +22,7 @@ PHP originally stood for &ldquo;Personal Home Page&rdquo;, but now stands for &l
 
 PHP packages were traditionally installed via PEAR (PHP Extension and Application Repository), but more recently the standard package and dependency management tool is Composer.
 
-Composer lets us run install commands to add packages to our system, for example `composer require phpunit` would add the unit testing framework PHPUnit to our system. 
+Composer lets us run install commands to add packages to our system, for example `composer require phpunit` would add the unit testing framework PHPUnit to our system.
 
 For instructions on how to install Composer visit [getcomposer.org](https://getcomposer.org/download/).
 
@@ -42,34 +42,35 @@ An example `composer.json` file looks like this:
         "twig/twig": "^2.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.3"
+        "phpunit/phpunit": "^7.4"
     }
 }
 {% endhighlight %}
- 
+
 The "require" block tells Composer that the Twig templating package is required for production use and can install Twig with a version of 2.x.x (ie. up to, but not including, version 3).
 
 The "require-dev" block tells Composer that PHPUnit is required in development, but not in production.
 
 Dependencies can be added to `composer.json` by
 
-```
+```bash
 composer require author/package-name
 ```
 
 Development dependencies can be added by
 
-```
+```bash
 composer require author/package-name --dev
 ```
 
 Dependencies can be updated to their latest maximum version by running
 
-```
+```bash
 composer update
 ```
 
 Composer will also generate a `composer.lock` file on each `composer update` and the initial `composer install`. This is not meant to be edited directly, it tells Composer to use specific versions of packages - particularly useful when hyhou want your development dependencies to match what you will push to production.
+
 
 ### Testing Tools
 
@@ -77,15 +78,16 @@ There are a number of testing tools available for PHP. The most popular one is [
 
 [Behat](http://behat.org/en/latest/) is the most popular behaviour-driven development (BDD) testing framework.
 
-[Codeception](http://codeception.com/) is a framework combining BDD, unit testing, and integration testing, and is cross-compatible with PHPUnit. 
+[Codeception](http://codeception.com/) is a framework combining BDD, unit testing, and integration testing, and is cross-compatible with PHPUnit.
 
 In our guides we will be using PHPUnit as the default testing framework.
+
 
 ## Directory Structure
 
 A typical directory structure for a PHP project consists of a `src` directory that contains all source files and a `tests` directory that includes all tests. For command-line applications the files to be executed to start your application (eg. `hello.php`) would reside in a `bin` directory.
 
-We provided a working example of a minimal project on [github.com/vanilla-project/php-command-line](https://github.com/vanilla-project/php-command-line).
+We provided a working example of a minimal project on [GitHub](https://github.com/elliotjreed/php-cli-boilerplate).
 <ul class="directory-structure">
   <li class="directory">src</li>
   <li class="directory">tests</li>
@@ -98,8 +100,8 @@ We provided a working example of a minimal project on [github.com/vanilla-projec
 ### Naming Conventions
 
 Directory names are in lower case. Class and interface files should be in upper case and match the class or interface names.
-Configuration, routes, and publically accessible files should be in lower case.
- 
+Configuration, routes, and publicly accessible files should be in lower case.
+
 For example the class `Vanilla` should be contained in file `Vanilla.php`, the publicly accessible route to the application should be `index.php`.
 
 Tests match their production code file names with a `Test` suffix, e.g. tests for code in `src/Vanilla.php` should be written in `test/VanillaTest.php`.
@@ -119,7 +121,7 @@ The main application consists of basically two files:
 
 All tests can be run by executing
 
-```
+```bash
 vendor/phpunit/phpunit/phpunit
 ```
 
@@ -128,17 +130,17 @@ vendor/phpunit/phpunit/phpunit
 
 #### Testing Approach
 
-The test for class `Greeting` is only verifying the return value of one method. 
+The test for class `Greeting` is only verifying the return value of one method.
 
 
 ### Running the Application
 
 To run the application execute `bin/hello.php` or `php bin/hello.php`.
-You should see the text &ldquo;Hello World&rdquo; being printed.
+You should see the text "Hello World" being printed.
 
-```
+```bash
 $: bin/hello.php
 Hello
 ```
 
-You should see the text &ldquo;Hello&rdquo; being printed.
+You should see the text "Hello" being printed.
