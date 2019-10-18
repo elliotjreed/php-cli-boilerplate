@@ -1,6 +1,8 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate?ref=badge_shield)
 
 # Vanilla PHP Command Line Project
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate?ref=badge_shield)
+
 
 This repository shows a basic setup for a command line application in PHP.
 
@@ -63,3 +65,6 @@ Hello
 ## License
 
 This project is licensed under the MIT License - see the [LICENCE.md](LICENCE.md) file for details.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Felliotjreed%2Fphp-cli-boilerplate?ref=badge_large)
