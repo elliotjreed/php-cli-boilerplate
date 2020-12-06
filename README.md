@@ -4,7 +4,7 @@ This repository shows a basic setup for a PHP package or application in PHP.
 
 ## Getting Started
 
-PHP 7 or above and Composer is expected to be installed on our system.
+PHP 7.3 or above and Composer is expected to be installed on our system.
 
 ### Installing Composer
 
